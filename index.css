@@ -1,0 +1,142 @@
+/* 1. Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+ /*  border: solid black 2px;  */
+}
+ 
+  /* 2, Base da oag-jna[ */
+
+  body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+
+/* Imagens de Fundo: uma vai ocupar 50% e a outra 50% */
+.fundo {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height:  100%;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+.fundo-esquerda {
+    left: 0;
+    background-image: url("./imgs/imgs/criancas.png");
+}
+
+.fundo-direita {
+    right: 0;
+    background-image: url('./imgs/imgs/menina.png');
+}
+
+
+/* 3. Painel Central com Transparencia */
+.Login {
+    width: 500px;
+    max-width: 100%;
+    min-height: 100vh;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.88);
+}
+/* Textos e Logo */
+.Login h1 {
+    font-size: 17.5px;
+    font-weight: normal;
+    text-transform: uppercase;
+    
+
+}
+
+.logo {
+    width: 320px;
+    max-width: 100%;
+    display: block;
+
+    margin: 4px auto 36px;
+}
+
+.Login h2 {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    
+   /*  Config. p/ deixar da mesma larg da logo */
+   width: 320px;
+   margin-left: auto;
+   margin-right: auto;
+
+   margin-bottom: 40px;
+}
+
+/* 5. Formulario */
+input[type="text"],
+input[type="password"]{
+    display: block;
+
+    width: 320px;
+    padding: 14px 12px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #333;
+
+    background-color: rgb(255, 255, 255 );
+    border: solid #c8c8c8 1px;
+
+
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    border-color: #4aa3e8;
+}
+
+button{
+    padding: 12px 22px;
+    margin:0 auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #d73220;
+    border: none;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: #636262;
+}
+.links{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+a{
+    color: #d73220;
+}
+a:hover{
+    color: #474747;
+}
